@@ -2,7 +2,7 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    PostForHome: [Post!]
+    postForHome: [Post!]
   }
 
   type Post {
@@ -12,9 +12,9 @@ const typeDefs = gql`
     createDate: String
     imgSrc: String
     postUrl: String
-    user: [User]
-    likeInfo: [LikeInfo]
-    commentInfo: [CommentInfo]
+    user: User
+    likeInfo: LikeInfo
+    commentInfo: CommentInfo
   }
 
   type User {

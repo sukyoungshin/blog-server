@@ -2,7 +2,10 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 
 const mocks = {
-  PostForHome: () => ({
+  Query: () => ({
+    postForHome: () => [...new Array(9)],
+  }),
+  Post: () => ({
     id: () => 1,
     title: () => "어쩌구",
     content: () => "저쩌구",
