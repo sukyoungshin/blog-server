@@ -2,8 +2,7 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    "Query to get posts array!"
-    Post: [Post!]
+    PostForHome: [Post!]
   }
 
   type Post {

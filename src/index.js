@@ -2,10 +2,7 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 
 const mocks = {
-  Query: () => ({
-    Post: () => [...new Array(9)],
-  }),
-  Post: () => ({
+  PostForHome: () => ({
     id: () => 1,
     title: () => "어쩌구",
     content: () => "저쩌구",
@@ -14,20 +11,20 @@ const mocks = {
     postUrl: () => "/zz",
     user: () => {
       return {
-        id: () => 11,
+        id: 11,
         name: "suKyoung",
-        userId: () => "zzzz01",
+        userId: "zzzz01",
       };
     },
     likeInfo: () => {
       return {
-        numberOfLikes: () => 1,
+        numberOfLikes: 1,
         isLikeClickUser: false,
       };
     },
     commentInfo: () => {
       return {
-        numberOfComments: () => 1,
+        numberOfComments: 1,
       };
     },
   }),
