@@ -7,16 +7,17 @@ const mocks = {
   }),
   Post: () => ({
     id: () => 1,
-    title: () => "어쩌구",
-    content: () => "저쩌구",
+    title: () => "id labore ex et quam laborum",
+    content: () =>
+      "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
     createDate: () => "2022-06-22",
-    imgSrc: () => "/dd",
-    postUrl: () => "/zz",
+    imgSrc: () => "/cat.webp",
+    postUrl: () => "/",
     user: () => {
       return {
         id: 11,
         name: "suKyoung",
-        userId: "zzzz01",
+        userId: "2022-01",
       };
     },
     likeInfo: () => {
